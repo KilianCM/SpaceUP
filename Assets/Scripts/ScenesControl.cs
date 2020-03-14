@@ -29,10 +29,20 @@ public class ScenesControl : MonoBehaviour
 
     public void FadeToScene(string scene) {
         sceneToLoad = scene;
+        PlayerPrefs.SetString ("lastLoadedScene", SceneManager.GetActiveScene ().name);
         animator.SetTrigger("FadeOut");
     }
 
     public void OnFadeComplete() {
         SceneManager.LoadScene(sceneToLoad);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            string lastSceneName = PlayerPrefs.GetString("lastLoadedScene");
+            FadeToScene(lastSceneName);
+        }
     }
 }
