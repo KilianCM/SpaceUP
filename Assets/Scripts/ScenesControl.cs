@@ -3,6 +3,10 @@ using UnityEngine.SceneManagement;
  
 public class ScenesControl : MonoBehaviour
 {
+
+    public Animator animator;
+    private string sceneToLoad;
+
     public void LoadGoddardScene()
     {
         // SceneManager.LoadScene("Launch");
@@ -20,6 +24,15 @@ public class ScenesControl : MonoBehaviour
 
     public void LoadEndScene()
     {
-        SceneManager.LoadScene("Launch");
+        FadeToScene("Launch");
+    }
+
+    public void FadeToScene(string scene) {
+        sceneToLoad = scene;
+        animator.SetTrigger("FadeOut");
+    }
+
+    public void OnFadeComplete() {
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
