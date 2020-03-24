@@ -18,7 +18,6 @@ public class WorkingEngine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(oxygen.isActive);
         if (oxygen.isActive && rp1.isActive)
         {
             particle.Play();
