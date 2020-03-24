@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Launch.unity
     guid: 5e08fc26bfee4d84ea5f516063a70a1c
+  - enabled: 1
+    path: Assets/Scenes/Fails.unity
+    guid: a2a590c90bef44d879ccfdb2a411eedc
   m_configObjects: {}

@@ -19,7 +19,7 @@ public class ScenesControl : MonoBehaviour
 
     public void LoadFailsScene() 
     {
-        // SceneManager.LoadScene("Launch");
+        FadeToScene("Fails");
     }
 
     public void LoadEndScene()
