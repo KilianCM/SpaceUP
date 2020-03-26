@@ -19,7 +19,7 @@ public class ScenesControl : MonoBehaviour
 
     public void LoadFailsScene() 
     {
-        FadeToScene("Fails");
+        FadeToScene("FailsNFCScan");
     }
 
     public void LoadEndScene()
