@@ -12,6 +12,7 @@ public class InfoDisplay : MonoBehaviour
     public Shader outlineShader;
     public Text titleContainer;
     public Text textContainer;
+    public bool isTransparent;
 
     private string defaultText = "Veuillez appuyer sur un élément pour en afficher la description.";
     private Shader defaultShader;
@@ -37,9 +38,19 @@ public class InfoDisplay : MonoBehaviour
     {
         titleContainer.text = title;
         textContainer.text = infos;
-        foreach (Renderer renderer in renderers)
+        if (isTransparent)
         {
-            renderer.material.shader = outlineShader;
+            if (gameObject.GetComponent<Outliner>() == null)
+            {
+                gameObject.AddComponent<Outliner>();
+            }
+        }
+        else
+        {
+            foreach (Renderer renderer in renderers)
+            {
+                renderer.material.shader = outlineShader;
+            }
         }
     }
 
@@ -47,9 +58,20 @@ public class InfoDisplay : MonoBehaviour
     {
         titleContainer.text = "";
         textContainer.text = defaultText;
-        foreach (Renderer renderer in renderers)
+        if (isTransparent)
         {
-            renderer.material.shader = defaultShader;
+            Destroy(gameObject.GetComponent<Outliner>());
+            foreach(GameObject outline in GameObject.FindGameObjectsWithTag("Outline"))
+            {
+                Destroy(outline);
+            }
+        }
+        else
+        {
+            foreach (Renderer renderer in renderers)
+            {
+                renderer.material.shader = defaultShader;
+            }
         }
     }
 }
