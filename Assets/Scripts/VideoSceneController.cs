@@ -11,7 +11,6 @@ public class VideoSceneController : MonoBehaviour
     void Start()
     {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
-        Debug.Log("Playing Video" + videoPlayer.isPlaying);
         StartCoroutine(PlayVideo());
     }
 
@@ -22,12 +21,23 @@ public class VideoSceneController : MonoBehaviour
 
     IEnumerator PlayVideo()
     {
+        videoPlayer.Prepare();
+
+        //Wait until video is prepared
+        WaitForSeconds waitTime = new WaitForSeconds(1);
+        while (!videoPlayer.isPrepared)
+        {
+            yield return waitTime;
+            break;
+        }
+
+        videoPlayer.Play();
+
         while (videoPlayer.isPlaying)
         {
             Debug.LogWarning("Video Time: " + Mathf.FloorToInt((float)videoPlayer.time));
             yield return null;
         }
-        Debug.Log("Done Playing Video");
         scenesControl.ReturnToMenu();
     }
 }
