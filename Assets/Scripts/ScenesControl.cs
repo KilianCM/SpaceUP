@@ -22,9 +22,19 @@ public class ScenesControl : MonoBehaviour
         FadeToScene("FailsNFCScan");
     }
 
+    public void LoadFailsVideoScene()
+    {
+        FadeToScene("NFCPlayVideo");
+    }
+
     public void LoadEndScene()
     {
         FadeToScene("Launch");
+    }
+
+    public void ReturnToMenu()
+    {
+        FadeToScene("MainMenu");
     }
 
     public void FadeToScene(string scene) {
@@ -34,6 +44,7 @@ public class ScenesControl : MonoBehaviour
     }
 
     public void OnFadeComplete() {
+        Screen.orientation = ScreenOrientation.Portrait;
         SceneManager.LoadScene(sceneToLoad);
     }
 

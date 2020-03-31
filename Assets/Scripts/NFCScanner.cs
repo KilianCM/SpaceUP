@@ -11,6 +11,7 @@ public class NFCScanner : MonoBehaviour
     public string tagID;
     public Text debugText;
     public bool tagFound = false;
+    public ScenesControl scenesControl;
  
     private AndroidJavaObject mActivity;
     private AndroidJavaObject mIntent;
@@ -25,6 +26,7 @@ public class NFCScanner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        tagFound = false;
         if (Application.platform == RuntimePlatform.Android) {
             if (!tagFound) {
                 try {
@@ -44,6 +46,8 @@ public class NFCScanner : MonoBehaviour
                             string text = System.Convert.ToBase64String(payLoad);
                             debugText.text = text;
                             tagID = text;
+                            scenesControl.LoadFailsVideoScene();
+                            mIntent.Call("removeExtra", "android.nfc.extra.TAG");
                         }
                         else {
                             debugText.text = "No ID found !";
