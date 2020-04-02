@@ -6,17 +6,24 @@ public class VideoSceneController : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
     public ScenesControl scenesControl;
+    private double currentTime;
 
-    // Start in landscape mode
     void Start()
     {
+        // Start in landscape mode
         Screen.orientation = ScreenOrientation.LandscapeLeft;
         StartCoroutine(PlayVideo());
+        videoPlayer.loopPointReached += EndReached;
     }
 
     void Update()
     {
+        currentTime = videoPlayer.time;
+    }
 
+    void EndReached(VideoPlayer vp)
+    {
+        scenesControl.ReturnToMenu();
     }
 
     IEnumerator PlayVideo()
@@ -32,12 +39,5 @@ public class VideoSceneController : MonoBehaviour
         }
 
         videoPlayer.Play();
-
-        while (videoPlayer.isPlaying)
-        {
-            Debug.LogWarning("Video Time: " + Mathf.FloorToInt((float)videoPlayer.time));
-            yield return null;
-        }
-        scenesControl.ReturnToMenu();
     }
 }
