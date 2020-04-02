@@ -12,6 +12,8 @@ public class VideoSceneController : MonoBehaviour
     {
         // Start in landscape mode
         Screen.orientation = ScreenOrientation.LandscapeLeft;
+        // Disable screen dimming
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
         StartCoroutine(PlayVideo());
         videoPlayer.loopPointReached += EndReached;
     }
