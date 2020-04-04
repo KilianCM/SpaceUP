@@ -14,7 +14,7 @@ public class ScenesControl : MonoBehaviour
     
     public void LoadCombustionScene()
     {
-        // SceneManager.LoadScene("Launch");
+        FadeToScene("Combustion");
     }
 
     public void LoadFailsScene() 
