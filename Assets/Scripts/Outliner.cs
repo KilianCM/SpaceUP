@@ -34,7 +34,6 @@ public class Outliner : MonoBehaviour
 
         outlineObj.transform.parent = this.transform;
         materials = new Material[materialsNum];
-        Debug.Log(Shader.Find("Outline/Outline"));
         for (int i = 0; i < materialsNum; i++)
         {
             materials[i] = new Material(Shader.Find("Outline/Outline"));
