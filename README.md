@@ -1,5 +1,7 @@
 # SpaceUP
 
+*Mis à jour le 2 avril 2020*
+
 Notre projet se lie à une exposition de la Turbine sur le thème de la conquête spatiale. 
 Elle permet d'apporter une expérience innovante et numérique en apport aux informations présentes sur l'exposition.
 
@@ -16,7 +18,8 @@ L'application va proposer différents ateliers qui correspondent chacun à un as
 
 ## Comment ça marche ?
 
-*Mis à jour le 2 avril 2020*
+Pour lancer le projet, il faut s'assurer que la plateforme de build est réglé sur Android dans `File -> Build Settings`. Chaque scène doit être ajouter au build, avec `MainMenu` en première position.
+L'application est compatible avec un smartphone capable de lire un tag NFC et assez puissant pour de la réalité augmentée.
 
 ### Scènes
 
@@ -24,6 +27,6 @@ L'application va proposer différents ateliers qui correspondent chacun à un as
 - `FailsNFCScan` écran d'attente du dépôt du téléphone sur un dock NFC pour lancer une vidéo 
 - `NFCPlayVideo` lecteur de la vidéo des râtés de la conquête spatiale (amélioration possible : QCM à certains moments de la vidéo)
 - `Launch` lancement de la fusée (version alpha avec uniquement un modèle 3D qui décolle avec sons NASA et particules)
+- `Combustion` mettant en scène un modèle simplifié d'un moteur de fusée avec lequel on peut intéragir pour le faire démarrer (mélange de carburants, allumeur, etc.)
 
-### Scripts
-
+Le script `ScenesControl` met à disposition des méthodes pour charger les scènes avec une animation FadeIn/FadeOut. Il est accessible en ajoutant le prefab `SceneController` dans une scène.
