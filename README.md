@@ -8,6 +8,8 @@ Elle permet d'apporter une expérience innovante et numérique en apport aux inf
 Pour cela, l'utilisateur utilise une application qui va lui permettre de suivre la conquête spatiale.
 L'application va proposer différents ateliers qui correspondent chacun à un aspect du thème.
 
+Le choix s'est porté sur Unity pour facilement utiliser la réalité augmentée ainsi que la gestion des modèles 3D.
+
 ## Progression du projet
 
 - ✅ Mise en place du projet, navigation et menu
@@ -21,12 +23,31 @@ L'application va proposer différents ateliers qui correspondent chacun à un as
 Pour lancer le projet, il faut s'assurer que la plateforme de build est réglé sur Android dans `File -> Build Settings`. Chaque scène doit être ajouter au build, avec `MainMenu` en première position.
 L'application est compatible avec un smartphone capable de lire un tag NFC et assez puissant pour de la réalité augmentée.
 
+### Architecture
+
+- **Animations** : tous les fichiers relatifs aux animations
+- **Fonts** : fichiers de police personnalisée
+- **Images**
+- **Imports** : fichiers importés depuis l'Assets Store
+- **Materials**
+- **Plugins** : dossier utilisé pour ajouter des fonctionnalités Android comme la gestion de NFC
+- **Prefabs**
+- **Scenes** : détail ci-dessous
+- **Scripts** : tous les scripts utilisés dans le projet (possible de rediviser en sous-dossiers pour éviter d'avoir un nombre important de scripts en vrac)
+- **Shaders**
+- **Sounds** 
+- **Textures**
+- **Videos** : fichiers des petites vidéos utilisées dans le projet. Les vidéos plus conséquentes en poids seront streamées via une URL
+
+
 ### Scènes
 
-- `MainMenu` boutons des menus sur un fond vidéo
-- `FailsNFCScan` écran d'attente du dépôt du téléphone sur un dock NFC pour lancer une vidéo 
-- `NFCPlayVideo` lecteur de la vidéo des râtés de la conquête spatiale (amélioration possible : QCM à certains moments de la vidéo)
-- `Launch` lancement de la fusée (version alpha avec uniquement un modèle 3D qui décolle avec sons NASA et particules)
-- `Combustion` mettant en scène un modèle simplifié d'un moteur de fusée avec lequel on peut intéragir pour le faire démarrer (mélange de carburants, allumeur, etc.)
+| Nom de scène   | Description                                                                                                                                           |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `MainMenu`     | Menu de l'application sur un fond vidéo                                                                                                               |
+| `FailsNFCScan` | Ecran d'attente du dépôt du téléphone sur un dock NFC pour lancer une vidéo                                                                           |
+| `NFCPlayVideo` | Lecteur de la vidéo des râtés de la conquête spatiale (amélioration possible : QCM à certains moments de la vidéo)                                    |
+| `Launch`       | Lancement de la fusée (version alpha avec uniquement un modèle 3D qui décolle avec sons NASA et particules)                                           |
+| `Combustion`   | Mise en scène d(un modèle simplifié d'un moteur de fusée avec lequel on peut intéragir pour le faire démarrer (mélange de carburants, allumeur, etc.) |
 
 Le script `ScenesControl` met à disposition des méthodes pour charger les scènes avec une animation FadeIn/FadeOut. Il est accessible en ajoutant le prefab `SceneController` dans une scène.
