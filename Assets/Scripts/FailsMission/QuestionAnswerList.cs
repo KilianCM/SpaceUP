@@ -13,7 +13,7 @@ public class QuestionAnswerList : MonoBehaviour
         List<Answer> list = new List<Answer>();
         list.Add(new Answer("Vrai", true));
         list.Add(new Answer("Faux", false));
-        Question question = new Question("L'explosion a été causée par une baisse de pression dans le réservoir ?", list);
+        Question question = new Question("L'explosion a été causée par une baisse de pression dans le réservoir.", list);
         quizzContent.Add(question);
 
         list = new List<Answer>();
@@ -35,7 +35,7 @@ public class QuestionAnswerList : MonoBehaviour
         quizzContent.Add(question);
     }
 
-    Question GetQuestion(int index)
+    public Question GetQuestion(int index)
     {
         if (index > quizzContent.Count)
             return null;
@@ -43,7 +43,7 @@ public class QuestionAnswerList : MonoBehaviour
     }
 }
 
-class Question
+public class Question
 {
     private string value;
     private List<Answer> answers;
@@ -63,7 +63,7 @@ class Question
     }
 }
 
-class Answer
+public class Answer
 {
     private string value;
     private bool correct;

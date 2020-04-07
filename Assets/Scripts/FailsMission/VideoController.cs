@@ -55,7 +55,6 @@ public class VideoController : MonoBehaviour
             yield return waitTime;
             break;
         }
-        Debug.Log("Play");
         videoPlayer.Play();
     }
 }

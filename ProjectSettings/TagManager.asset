@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Outline
   - Loader
+  - Question
+  - Answer
   layers:
   - Default
   - TransparentFX
