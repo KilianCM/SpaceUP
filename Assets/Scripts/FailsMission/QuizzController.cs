@@ -34,8 +34,7 @@ public class QuizzController : MonoBehaviour
     void Update()
     {
         currentTime = VideoPlayer.time;
-        //if(currentTime < 38 && currentTime > 37.5 && !questionAnswered)
-        if (currentTime < 3 && currentTime > 2.5 && !questionAnswered)
+        if(currentTime < 38 && currentTime > 37.5 && !questionAnswered)
         {
             currentQuestion = questionAnswerList.GetQuestion(0);
             UpdateUI();
