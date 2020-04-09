@@ -17,19 +17,19 @@ public class QuestionAnswerList : MonoBehaviour
         quizzContent.Add(question);
 
         list = new List<Answer>();
-        list.Add(new Answer("3", true));
         list.Add(new Answer("2", false));
+        list.Add(new Answer("3", true));
         question = new Question("Combien d'astronautes sont décédés dans cet accident ?", list);
         quizzContent.Add(question);
 
         list = new List<Answer>();
-        list.Add(new Answer("Des fortes vibrations", true));
         list.Add(new Answer("Une rotation trop rapide de la fusée", false));
+        list.Add(new Answer("Des fortes vibrations", true));
         question = new Question("Qu'est-ce que l'effet POGO ?", list);
         quizzContent.Add(question);
 
         list = new List<Answer>();
-        list.Add(new Answer("Ejection automatique par l'ordinateur de bord", true));
+        list.Add(new Answer("Ejection automatique", true));
         list.Add(new Answer("Extincteur automatique", false));
         question = new Question("Quelle avancée technologique a sauvé les astronautes ?", list);
         quizzContent.Add(question);
