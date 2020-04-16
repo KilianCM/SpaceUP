@@ -8,6 +8,7 @@ public class QuizzController : MonoBehaviour
 {
     public Canvas QuizzCanvas;
     public VideoPlayer VideoPlayer;
+    public int score = 0;
 
     private double currentTime;
     private QuestionAnswerList questionAnswerList;
@@ -17,7 +18,6 @@ public class QuizzController : MonoBehaviour
     private Question currentQuestion;
     private List<Answer> answers;
     private bool questionAnswered = false;
-    private int score = 0;
 
     // Start is called before the first frame update
     void Start()
