@@ -15,7 +15,7 @@ Le choix s'est porté sur Unity pour facilement utiliser la réalité augmentée
 - ✅ Mise en place du projet, navigation et menu
 - Atelier Goddard, *le premier à avoir l'idée de créer une fusée*
 - 🔨 Atelier Combustion, *fonctionnement d'un moteur de fusée*
-- ✅ Atelier Les Râtés, *histoire des erreurs qui ont menés aux loupés de décollage* - À améliorer
+- ✅ Atelier Les Râtés, *histoire des erreurs qui ont menés aux loupés de décollage*
 - 🔨 Lancement d'une fusée en réalité augmentée avec poste de pilotage fictif
 
 ## Comment ça marche ?
@@ -46,7 +46,7 @@ L'application est compatible avec un smartphone capable de lire un tag NFC et as
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `MainMenu`     | Menu de l'application sur un fond vidéo                                                                                                               |
 | `FailsNFCScan` | Ecran d'attente du dépôt du téléphone sur un dock NFC pour lancer une vidéo                                                                           |
-| `NFCPlayVideo` | Lecteur de la vidéo des râtés de la conquête spatiale (amélioration possible : QCM à certains moments de la vidéo)                                    |
+| `NFCPlayVideo` | Lecteur de la vidéo des râtés de la conquête spatiale avec QCM à certains moments de la vidéo. L'utilisateur a le choix entre 2 réponses et les questions portent sur des aspects évoqués dans la vidéo  |
 | `Launch`       | Lancement de la fusée (version alpha avec uniquement un modèle 3D qui décolle avec sons NASA et particules)                                           |
 | `Combustion`   | Mise en scène d(un modèle simplifié d'un moteur de fusée avec lequel on peut intéragir pour le faire démarrer (mélange de carburants, allumeur, etc.) |
 
