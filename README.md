@@ -1,6 +1,6 @@
 # SpaceUP
 
-*Mis à jour le 2 avril 2020*
+*Mis à jour le 19 avril 2020*
 
 Notre projet se lie à une exposition de la Turbine sur le thème de la conquête spatiale. 
 Elle permet d'apporter une expérience innovante et numérique en apport aux informations présentes sur l'exposition.
