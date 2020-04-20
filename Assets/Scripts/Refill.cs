@@ -7,8 +7,14 @@ public class Refill : MonoBehaviour
     public Material Material;
     public float fillAmount = -0.4f;
     public float refillSpeed = 0.1f;
-
     public bool refill = false;
+
+    private InfoDisplay infoDisplay;
+
+    private void Start()
+    {
+        infoDisplay = gameObject.GetComponent<InfoDisplay>();
+    }
 
     private void Update()
     {
@@ -21,7 +27,9 @@ public class Refill : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //Debug.Log("refill");
-        refill = true;
+        if (infoDisplay.isSelected)
+        {
+            refill = true;
+        }
     }
 }
