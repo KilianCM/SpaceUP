@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WorkingEngine : MonoBehaviour
 {
@@ -15,8 +16,11 @@ public class WorkingEngine : MonoBehaviour
     public float emptyAmount = 1.4f;
     public ParticleSystem OXFlow;
     public ParticleSystem RP1Flow;
+    public GameObject successPopUp;
+    public GameObject mainMenuBtn;
 
     private bool isStarted = false;
+    private bool alreadySucceed = false;
 
     private void Start()
     {
@@ -45,6 +49,10 @@ public class WorkingEngine : MonoBehaviour
         if (OxOn() && RP1On() && (igniter.isOn || isStarted)){
             isStarted = true;
             particle.Play();
+            if (!alreadySucceed){
+                alreadySucceed = true;
+                Invoke("DisplaySuccessPopUp", 3);
+            }
         }
         else{
             isStarted = false;
@@ -59,5 +67,11 @@ public class WorkingEngine : MonoBehaviour
     bool RP1On()
     {
         return rp1.isActive && RP1LiquidMaterial.GetFloat("_FillAmount") < emptyAmount;
+    }
+
+    void DisplaySuccessPopUp()
+    {
+        mainMenuBtn.SetActive(true);
+        successPopUp.SetActive(true);
     }
 }
