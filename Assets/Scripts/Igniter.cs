@@ -8,7 +8,13 @@ public class Igniter : MonoBehaviour
     public bool isOn = false;
     public float duration=6000;
 
+    private InfoDisplay infoDisplay;
     private float startTime;
+
+    private void Start()
+    {
+        infoDisplay = gameObject.GetComponent<InfoDisplay>();
+    }
 
     private void Update()
     {
@@ -20,15 +26,18 @@ public class Igniter : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        isOn = !isOn;
-        if (isOn)
+        if (infoDisplay.isSelected)
         {
-            startTime = Time.time;
-            fire.Play();
-        }
-        else
-        {
-            fire.Stop();
+            isOn = !isOn;
+            if (isOn)
+            {
+                startTime = Time.time;
+                fire.Play();
+            }
+            else
+            {
+                fire.Stop();
+            }
         }
     }
 }

@@ -5,8 +5,9 @@ using UnityEngine;
 public class Orientation : MonoBehaviour
 {
     // Start is called before the first frame update
+    public ScreenOrientation screenOrientation;
     void Start()
     {
-        //Screen.orientation = ScreenOrientation.Landscape;
+        Screen.orientation = screenOrientation;
     }
 }

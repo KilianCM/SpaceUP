@@ -10,14 +10,17 @@ public class ClickAction : MonoBehaviour
     private float turnSpeed;
 
     private Material materialDefault;
+    private InfoDisplay infoDisplay;
 
-    
+
+
     public bool isActive = false;
     public int shouldRotate = 0;//0=>no, 1=>clockwise -1=>counterclockwise
 
     // Start is called before the first frame update
     void Start()
     {
+        infoDisplay = gameObject.GetComponent<InfoDisplay>();
         materialDefault=gameObject.transform.GetChild(0).GetComponent<Renderer>().material;
     }
 
@@ -31,22 +34,25 @@ public class ClickAction : MonoBehaviour
 
     private void OnMouseDown()
     {
-        isActive= !isActive;
+        if (infoDisplay.isSelected)
+        {
+            isActive = !isActive;
 
-        if(isActive)
-        {
-            shouldRotate = 1;
-            foreach (Transform child in transform)
+            if (isActive)
             {
-                child.GetComponent<Renderer>().material = materialTrue;
+                shouldRotate = 1;
+                foreach (Transform child in transform)
+                {
+                    child.GetComponent<Renderer>().material = materialTrue;
+                }
             }
-        }
-        else
-        {
-            shouldRotate = -1;
-            foreach (Transform child in transform)
+            else
             {
-                child.GetComponent<Renderer>().material = materialDefault;
+                shouldRotate = -1;
+                foreach (Transform child in transform)
+                {
+                    child.GetComponent<Renderer>().material = materialDefault;
+                }
             }
         }
     }
