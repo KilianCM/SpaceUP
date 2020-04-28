@@ -18,8 +18,6 @@ public class VideoController : MonoBehaviour
     {
         astronautLoader = GameObject.FindGameObjectWithTag("Loader");
 
-        // Start in landscape mode
-        Screen.orientation = ScreenOrientation.LandscapeLeft;
         // Disable screen dimming
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
         StartCoroutine(PlayVideo());
