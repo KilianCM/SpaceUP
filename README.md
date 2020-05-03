@@ -13,10 +13,11 @@ Le choix s'est porté sur Unity pour facilement utiliser la réalité augmentée
 ## Progression du projet
 
 - ✅ Mise en place du projet, navigation et menu
-- Atelier Goddard, *le premier à avoir l'idée de créer une fusée*
-- 🔨 Atelier Combustion, *fonctionnement d'un moteur de fusée*
+- 🔨 Atelier Goddard, *le premier à avoir l'idée de créer une fusée*
+- ✅ Atelier Combustion, *fonctionnement d'un moteur de fusée*
 - ✅ Atelier Les Râtés, *histoire des erreurs qui ont menés aux loupés de décollage*
 - 🔨 Lancement d'une fusée en réalité augmentée avec poste de pilotage fictif
+- 🔨 Prise de selfie avec filtre SpaceUP
 
 ## Comment ça marche ?
 
