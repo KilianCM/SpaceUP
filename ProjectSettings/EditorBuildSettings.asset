@@ -22,5 +22,8 @@ EditorBuildSettings:
     guid: 5e08fc26bfee4d84ea5f516063a70a1c
   - enabled: 1
     path: Assets/Scenes/MoonWorshop/Introduction.unity
-    guid: b81ec21780b13487689e980aefd05383
+    guid: 271af74077aa949128859dcb51fc30f9
+  - enabled: 1
+    path: Assets/Scenes/MoonWorshop/CrawlerVideo.unity
+    guid: 400097f939819437dbff3b19cdec0fe5
   m_configObjects: {}

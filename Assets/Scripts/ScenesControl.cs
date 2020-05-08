@@ -37,6 +37,11 @@ public class ScenesControl : MonoBehaviour
         FadeToScene("CrawlerVideo");
     }
 
+    public void LoadStep2MoonMission()
+    {
+        FadeToScene("MainMenu");
+    }
+
     public void ReturnToMenu()
     {
         FadeToScene("MainMenu");

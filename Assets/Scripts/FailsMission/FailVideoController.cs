@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
-public class VideoController : MonoBehaviour
+public class FailVideoController : MonoBehaviour
 {
     public VideoPlayer VideoPlayer;
     public Canvas LoadingCanvas;
