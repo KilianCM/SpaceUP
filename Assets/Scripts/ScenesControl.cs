@@ -32,6 +32,11 @@ public class ScenesControl : MonoBehaviour
         FadeToScene("Introduction");
     }
 
+    public void LoadCrawlerScene()
+    {
+        FadeToScene("CrawlerVideo");
+    }
+
     public void ReturnToMenu()
     {
         FadeToScene("MainMenu");
