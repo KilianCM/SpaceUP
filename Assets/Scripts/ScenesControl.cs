@@ -29,7 +29,7 @@ public class ScenesControl : MonoBehaviour
 
     public void LoadEndScene()
     {
-        FadeToScene("Launch");
+        FadeToScene("Introduction");
     }
 
     public void ReturnToMenu()

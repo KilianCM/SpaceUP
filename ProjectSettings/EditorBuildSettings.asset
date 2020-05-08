@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Launch.unity
     guid: 5e08fc26bfee4d84ea5f516063a70a1c
+  - enabled: 1
+    path: Assets/Scenes/MoonWorshop/Introduction.unity
+    guid: b81ec21780b13487689e980aefd05383
   m_configObjects: {}
