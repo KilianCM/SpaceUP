@@ -16,12 +16,15 @@ Le choix s'est porté sur Unity pour facilement utiliser la réalité augmentée
 - 🔨 Atelier Goddard, *le premier à avoir l'idée de créer une fusée*
 - ✅ Atelier Combustion, *fonctionnement d'un moteur de fusée*
 - ✅ Atelier Les Râtés, *histoire des erreurs qui ont menés aux loupés de décollage*
-- 🔨 Lancement d'une fusée en réalité augmentée avec poste de pilotage fictif
+- 🔨 Mission Lune : mini jeux dans le but d'atteindre la Lune
 - 🔨 Prise de selfie avec filtre SpaceUP
 
 ## Comment ça marche ?
 
-Pour lancer le projet, il faut s'assurer que la plateforme de build est réglé sur Android dans `File -> Build Settings`. Chaque scène doit être ajouter au build, avec `MainMenu` en première position.
+Pour lancer le projet : 
+- S'assurer que la plateforme de build est réglé sur Android dans `File -> Build Settings`. 
+- Chaque scène doit être ajouter au build, avec `MainMenu` en première position.
+
 L'application est compatible avec un smartphone capable de lire un tag NFC et assez puissant pour de la réalité augmentée.
 
 ### Architecture
@@ -50,5 +53,8 @@ L'application est compatible avec un smartphone capable de lire un tag NFC et as
 | `NFCPlayVideo` | Lecteur de la vidéo des râtés de la conquête spatiale avec QCM à certains moments de la vidéo. L'utilisateur a le choix entre 2 réponses et les questions portent sur des aspects évoqués dans la vidéo  |
 | `Launch`       | Lancement de la fusée (version alpha avec uniquement un modèle 3D qui décolle avec sons NASA et particules)                                           |
 | `Combustion`   | Mise en scène d(un modèle simplifié d'un moteur de fusée avec lequel on peut intéragir pour le faire démarrer (mélange de carburants, allumeur, etc.) |
+| `MoonMission/Introduction`   | Explications à l'utilisateur de l'atelier |
+| `MoonMission/CrawlerVideo`   | Lecture d'une vidéo avec informations sur un crawler transporter |
+| `MoonMission/FillTank`   | *WIP* : l'utilisateur doit choisir les bons carburants pour remplir la fusée |
 
 Le script `ScenesControl` met à disposition des méthodes pour charger les scènes avec une animation FadeIn/FadeOut. Il est accessible en ajoutant le prefab `SceneController` dans une scène.
