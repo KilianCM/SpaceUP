@@ -29,7 +29,17 @@ public class ScenesControl : MonoBehaviour
 
     public void LoadEndScene()
     {
-        FadeToScene("Launch");
+        FadeToScene("Introduction");
+    }
+
+    public void LoadCrawlerScene()
+    {
+        FadeToScene("CrawlerVideo");
+    }
+
+    public void LoadStep2MoonMission()
+    {
+        FadeToScene("FillTank");
     }
 
     public void ReturnToMenu()
