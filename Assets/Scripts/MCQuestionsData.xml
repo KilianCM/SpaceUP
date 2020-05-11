@@ -1,0 +1,46 @@
+<Questions>
+  <Question>
+    <QuestionText>Activez le moteur</QuestionText>
+    <AnswerValue>1</AnswerValue>
+    <Elements>
+      <Element>
+        <Type>button</Type>
+        <Text>Moteur</Text>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Echelle</Text>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Découplage</Text>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Gyroscope</Text>
+      </Element>
+    </Elements>
+  </Question>
+  <Question>
+    <QuestionText>Découplez</QuestionText>
+    <AnswerValue>1</AnswerValue>
+    <Elements>
+      <Element>
+        <Type>button</Type>
+        <Text>Découplage</Text>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Moteur</Text>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Echelle</Text>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Gyroscope</Text>
+      </Element>
+    </Elements>
+  </Question>
+</Questions>
