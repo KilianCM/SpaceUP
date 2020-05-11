@@ -39,7 +39,7 @@ public class ScenesControl : MonoBehaviour
 
     public void LoadStep2MoonMission()
     {
-        FadeToScene("MainMenu");
+        FadeToScene("FillTank");
     }
 
     public void ReturnToMenu()
