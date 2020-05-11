@@ -26,7 +26,7 @@ public class selfiePartage : MonoBehaviour
 		}
 
 		WebCamDevice cameraSelection =  WebCamTexture.devices[orientation];
-		cam = new WebCamTexture(cameraSelection.name);
+		cam = new WebCamTexture(cameraSelection.name, Screen.width, Screen.height);
 
 		// GetComponent<Renderer>().material.mainTexture = cam;
 		display.texture = cam;
