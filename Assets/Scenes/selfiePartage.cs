@@ -14,6 +14,20 @@ public class selfiePartage : MonoBehaviour
 	public RawImage display;
 
 
+	public void TakePicture(){
+
+		GameObject button = GameObject.Find("Pictur");
+		button.SetActive(false);
+
+		ScreenCapture.CaptureScreenshot("capture.png");
+
+		
+
+	}
+
+
+	
+
     void Start()
     {
 
@@ -31,13 +45,13 @@ public class selfiePartage : MonoBehaviour
 		// GetComponent<Renderer>().material.mainTexture = cam;
 		display.texture = cam;
 		cam.Play();
-        
+ 
     }
 
-    // Update is called once per frame
+ 
     void Update()
     {
-        
+	
     }
 }
 
