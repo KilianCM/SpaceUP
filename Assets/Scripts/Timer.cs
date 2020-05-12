@@ -29,7 +29,8 @@ public class Timer : MonoBehaviour
             {
                 percentage = 0;
                 this.isStarted = false;
-                mcEvent.TimerComplete();
+                MCEvent.score -= 50;
+                mcEvent.NextQuestion();
             }
             this.gameObject.transform.GetChild(0).gameObject.transform.localScale = new Vector3(percentage, 1, 1);
 

@@ -10,9 +10,10 @@ using UnityEngine.UI;
 public class UIBuilder : MonoBehaviour
 {
     public GameObject panel;
+    public GameObject scorePanel;
     public List<string> elementsTypesName;
     public List<GameObject> elementsTypesPrefabs;
-    public Timer timer;
+    public GameObject timer;
 
     private void Awake()
     {
@@ -20,6 +21,7 @@ public class UIBuilder : MonoBehaviour
         MCEvent.elementsType = elementsTypesName.Zip(elementsTypesPrefabs, (k, v) => new { k, v })
               .ToDictionary(x => x.k, x => x.v); ;
         MCEvent.panel = panel;
+        MCEvent.scorePanel = scorePanel;
     }
 
     // Start is called before the first frame update

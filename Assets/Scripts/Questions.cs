@@ -1,4 +1,5 @@
-﻿using System;
+﻿/*Created from https://xmltocsharp.azurewebsites.net/ */
+using System;
 using System.Xml.Serialization;
 using System.Collections.Generic;
 namespace LoadQuestions
@@ -10,6 +11,8 @@ namespace LoadQuestions
 		public string Type { get; set; }
 		[XmlElement(ElementName = "Text")]
 		public string Text { get; set; }
+		[XmlElement(ElementName = "isCorrect")]
+		public bool IsCorrect { get; set; }
 	}
 
 	[XmlRoot(ElementName = "Elements")]

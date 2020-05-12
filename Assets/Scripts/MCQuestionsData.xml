@@ -6,18 +6,22 @@
       <Element>
         <Type>button</Type>
         <Text>Moteur</Text>
+        <isCorrect>true</isCorrect>
       </Element>
       <Element>
         <Type>button</Type>
         <Text>Echelle</Text>
+        <isCorrect>false</isCorrect>
       </Element>
       <Element>
         <Type>button</Type>
         <Text>Découplage</Text>
+        <isCorrect>false</isCorrect>
       </Element>
       <Element>
         <Type>button</Type>
         <Text>Gyroscope</Text>
+        <isCorrect>false</isCorrect>
       </Element>
     </Elements>
   </Question>
@@ -28,18 +32,48 @@
       <Element>
         <Type>button</Type>
         <Text>Découplage</Text>
+        <isCorrect>true</isCorrect>
       </Element>
       <Element>
         <Type>button</Type>
         <Text>Moteur</Text>
+        <isCorrect>false</isCorrect>
       </Element>
       <Element>
         <Type>button</Type>
         <Text>Echelle</Text>
+        <isCorrect>false</isCorrect>
       </Element>
       <Element>
         <Type>button</Type>
         <Text>Gyroscope</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+    </Elements>
+  </Question>
+  <Question>
+    <QuestionText>Mettre la puissance sur 4</QuestionText>
+    <AnswerValue>4</AnswerValue>
+    <Elements>
+      <Element>
+        <Type>button</Type>
+        <Text>Vider les réservoirs</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Lacher du leste</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>slider</Type>
+        <Text>Puissance moteur</Text>
+        <isCorrect>true</isCorrect>
+      </Element>
+      <Element>
+        <Type>slider</Type>
+        <Text>Inclinaison</Text>
+        <isCorrect>false</isCorrect>
       </Element>
     </Elements>
   </Question>
