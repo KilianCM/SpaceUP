@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GoddardWorkshop.unity
-    guid: 241dc289d9b8c4ec3bb97faa84c83d58
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: bb076c253c298455e8bb7e3e72f4aedc
   - enabled: 1
@@ -33,8 +30,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MoonMission/FillTank.unity
     guid: 90a91ff6644a44dfda54f801368e9545
   - enabled: 1
-    path: Assets/Scenes/GoddardAR.unity
-    guid: 7c2837accf4ed574f99a625e5886b02a
+    path: Assets/Scenes/GoddardWorkshop.unity
+    guid: 241dc289d9b8c4ec3bb97faa84c83d58
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cd3c0482bc6d6419b866ed2276e9ef08,
       type: 2}
