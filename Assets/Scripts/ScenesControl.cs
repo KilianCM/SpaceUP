@@ -9,7 +9,7 @@ public class ScenesControl : MonoBehaviour
 
     public void LoadGoddardScene()
     {
-        // SceneManager.LoadScene("Launch");
+        SceneManager.LoadScene("GoddardWorkshop");
     }
     
     public void LoadCombustionScene()
