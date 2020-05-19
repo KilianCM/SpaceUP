@@ -21,12 +21,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Launch.unity
     guid: 5e08fc26bfee4d84ea5f516063a70a1c
   - enabled: 1
-    path: Assets/Scenes/MoonWorshop/Introduction.unity
+    path: Assets/Scenes/MoonMission/Introduction.unity
     guid: 271af74077aa949128859dcb51fc30f9
   - enabled: 1
-    path: Assets/Scenes/MoonWorshop/CrawlerVideo.unity
+    path: Assets/Scenes/MoonMission/CrawlerVideo.unity
     guid: 400097f939819437dbff3b19cdec0fe5
   - enabled: 1
-    path: Assets/Scenes/MoonWorshop/FillTank.unity
+    path: Assets/Scenes/MoonMission/FillTank.unity
     guid: 90a91ff6644a44dfda54f801368e9545
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/GoddardWorkshop.unity
+    guid: 241dc289d9b8c4ec3bb97faa84c83d58
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cd3c0482bc6d6419b866ed2276e9ef08,
+      type: 2}
