@@ -56,6 +56,6 @@ L'application est compatible avec un smartphone capable de lire un tag NFC et as
 | `MoonMission/Introduction`   | Explications à l'utilisateur de l'atelier |
 | `MoonMission/CrawlerVideo`   | Lecture d'une vidéo avec informations sur un crawler transporter |
 | `MoonMission/FillTank`   | *WIP* : l'utilisateur doit choisir les bons carburants pour remplir la fusée |
-| `GoddardWorkshop`   | Informations sur Goddard, le précurseur de la conquête spatiale. Utilisation de l'AR avec Vuforia. **[Cette affiche](https://i.imgur.com/D43wrKN.jpg) est nécessaire pour expérimenter cet atelier.** |
+| `GoddardWorkshop`   | Informations sur Goddard, le précurseur de la conquête spatiale. Utilisation de l'AR avec Vuforia. **[Cette affiche](https://i.imgur.com/KD9xl6e.jpg) est nécessaire pour expérimenter cet atelier.** |
 
 Le script `ScenesControl` met à disposition des méthodes pour charger les scènes avec une animation FadeIn/FadeOut. Il est accessible en ajoutant le prefab `SceneController` dans une scène.
