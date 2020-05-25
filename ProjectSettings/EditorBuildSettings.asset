@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MoonMission/AR.unity
+    guid: 92824638c50e44fe3aa055bbfef4e59c
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: bb076c253c298455e8bb7e3e72f4aedc
   - enabled: 1
