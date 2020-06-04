@@ -5,23 +5,22 @@ using UnityEngine;
 public class RocketFlight : MonoBehaviour {
 
 	public float thrust = 1.0f;
-	
-	
 	public float startGTAlt = 10;//Gravity Turn start Altitude
 	public float maxRotation = 0.25f;
 	public float turnSpeed = 0.1f;
 	public float pivotOffset = 0;//y offset rotation pivot (to check if necessary)
-	public ParticleSystem plume;
-	public Light engineLight;
-	public GameObject cam;
 
+	private ParticleSystem[] plumes;
+	private Light[] lights;
 	private Rigidbody rb;
-	private AudioSource source;
+	private AudioSource engineSound;
 
 	private bool launched = false;
 	void Start () {
 		rb = gameObject.GetComponent<Rigidbody>();
-		source = gameObject.GetComponent<AudioSource>();
+		engineSound = gameObject.GetComponent<AudioSource>();
+  		plumes = FindObjectsOfType<ParticleSystem>();
+		lights = FindObjectsOfType<Light>();
 	}
 
 	void FixedUpdate()
@@ -40,10 +39,15 @@ public class RocketFlight : MonoBehaviour {
 
 	public void Launch()
 	{
-		plume.Play();
-		source.Play();
-		engineLight.enabled = true;
-		cam.GetComponent<CameraShake>().ShakeEnable(true);
+        foreach(ParticleSystem plume in plumes)
+        {
+			plume.Play();
+        }
+		engineSound.Play();
+        foreach(Light light in lights)
+        {
+			light.enabled = true;
+        }
 		launched = true;
 	}
 }
