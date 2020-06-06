@@ -17,7 +17,6 @@ public class Countdown : MonoBehaviour {
 	{
 		uiText.text = value.ToString();
 		button.onClick.AddListener(StartCountdown);
-		Debug.Log("START");
 	}
 
 	void Update () {
@@ -34,9 +33,8 @@ public class Countdown : MonoBehaviour {
 
     void StartCountdown()
     {
-		Debug.Log("CLICK");
-		button.enabled = false;
-		uiText.enabled = true;
+		button.gameObject.SetActive(false);
+		uiText.gameObject.SetActive(true);
 		sound.Play();
 		started = true;
 	}
