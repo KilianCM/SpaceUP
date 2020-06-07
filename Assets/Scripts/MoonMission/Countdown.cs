@@ -7,7 +7,8 @@ public class Countdown : MonoBehaviour {
 
 	public Text uiText;
 	public int value;
-	public Button button;
+	public Button launchButton;
+	public Button nextButton;
 	public AudioSource sound;
 
 	private float elapsed = 0f;
@@ -16,7 +17,7 @@ public class Countdown : MonoBehaviour {
 	void Start()
 	{
 		uiText.text = value.ToString();
-		button.onClick.AddListener(StartCountdown);
+		launchButton.onClick.AddListener(StartCountdown);
 	}
 
 	void Update () {
@@ -33,7 +34,8 @@ public class Countdown : MonoBehaviour {
 
     void StartCountdown()
     {
-		button.gameObject.SetActive(false);
+		launchButton.gameObject.SetActive(false);
+		nextButton.gameObject.SetActive(true);
 		uiText.gameObject.SetActive(true);
 		sound.Play();
 		started = true;
@@ -51,4 +53,5 @@ public class Countdown : MonoBehaviour {
 			uiText.text = "";
 		}
 	}
+
 }
