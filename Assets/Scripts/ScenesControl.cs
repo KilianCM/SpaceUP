@@ -54,7 +54,6 @@ public class ScenesControl : MonoBehaviour
 
     public void FadeToScene(string scene) {
         sceneToLoad = scene;
-        PlayerPrefs.SetString ("lastLoadedScene", SceneManager.GetActiveScene ().name);
         animator.SetTrigger("FadeOut");
     }
 
@@ -67,8 +66,7 @@ public class ScenesControl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            string lastSceneName = PlayerPrefs.GetString("lastLoadedScene");
-            FadeToScene(lastSceneName);
+            FadeToScene("MainMenu");
         }
     }
 }

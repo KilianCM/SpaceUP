@@ -6050,7 +6050,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "F\xE9licitations !\nVous avec r\xE9ussi \xE0 d\xE9marter le moteur, mission
+  m_Text: "F\xE9licitations !\nVous avec r\xE9ussi \xE0 d\xE9marrer le moteur, mission
     r\xE9ussie !"
 --- !u!222 &577839370
 CanvasRenderer:
