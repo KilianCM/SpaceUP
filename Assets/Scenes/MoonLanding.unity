@@ -296,6 +296,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: terrain (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1276603737757889232, guid: a45c67ed58130274f8d790eaa7c0776d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 28.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a45c67ed58130274f8d790eaa7c0776d, type: 3}
 --- !u!1 &1867116827 stripped
@@ -333,7 +338,7 @@ PrefabInstance:
     - target: {fileID: 564392513702657301, guid: a8a410e8bd15f4140b5aab64d5b05329,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.039
+      value: 17.73
       objectReference: {fileID: 0}
     - target: {fileID: 564392513702657301, guid: a8a410e8bd15f4140b5aab64d5b05329,
         type: 3}
