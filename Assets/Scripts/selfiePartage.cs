@@ -11,11 +11,13 @@ using VoxelBusters.NativePlugins;
 public class selfiePartage : MonoBehaviour
 {
 
-	// Oirentation es stocker dans une variable au ca ou on souhaterai développer l'optiosn d'inverser l'image
+	// Oirentation es stocker dans une variable au ca ou on souhaterai développer l'options d'inverser l'image
    	int orientation = 1;
 	// Objet camera de notre téléphone
 	WebCamTexture cam; 
+
 	GameObject button;
+
 	// affichage du flux video de la camera sur une l'objet RawImage
 	public RawImage display;
 
@@ -23,10 +25,11 @@ public class selfiePartage : MonoBehaviour
 	void Start() {
 		// Vérifie si il y à bien une camera de face.	
 		if(WebCamTexture.devices.Length > 1) {
+
+
 			WebCamDevice cameraSelection =  WebCamTexture.devices[orientation];
 			cam = new WebCamTexture(cameraSelection.name, Screen.width, Screen.height);
-			cam.Play();
-			display.texture = cam;
+			
 
 			// si on n'as bien une camera mais que le script à planter
 			if(cam == null){
@@ -34,10 +37,17 @@ public class selfiePartage : MonoBehaviour
 				return;
 			}
 
+
+
+
 		}else{
 			Debug.Log("Pas de Caméra détecter");
 			return;
 		}
+		cam.Play();
+		display.texture = cam;
+
+		
  
     	}
 
