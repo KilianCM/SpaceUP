@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 250}
+  m_AnchoredPosition: {x: 0, y: 425}
   m_SizeDelta: {x: 1000, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &177082892
@@ -206,8 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isStarted: 0
-  remainingTime: 5
-  totalTime: 5
+  totalTime: 8
 --- !u!1 &181352105
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,8 +345,8 @@ Canvas:
   m_GameObject: {fileID: 223627909}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1257767090}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -397,9 +396,13 @@ MonoBehaviour:
   elementsTypesName:
   - button
   - slider
+  - lever
+  filler1X1: {fileID: 6704839097205587148, guid: 9e826039643f7b442b58fabd91ea21d8,
+    type: 3}
   elementsTypesPrefabs:
-  - {fileID: 8840639553731489843, guid: 38cbb178b31d3b74e996ded41969d978, type: 3}
-  - {fileID: 6017196697452154959, guid: 08679a9d7826d6747913ab5313c44d4d, type: 3}
+  - {fileID: 1979084272923475528, guid: 5601a2bae1b2f0f42a0375a2529f42af, type: 3}
+  - {fileID: 5439469164054310046, guid: 4fd6254ae7471b54fa5924eae976eedf, type: 3}
+  - {fileID: 6491724736984356037, guid: ee6383ec20148ca4a946169e402d4bff, type: 3}
   timer: {fileID: 177082890}
 --- !u!1 &260333926
 GameObject:
@@ -1139,7 +1142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 264}
   m_SizeDelta: {x: 1600, y: 90}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2122517430

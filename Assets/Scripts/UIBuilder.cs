@@ -12,6 +12,7 @@ public class UIBuilder : MonoBehaviour
     public GameObject panel;
     public GameObject scorePanel;
     public List<string> elementsTypesName;
+    public GameObject filler1X1;
     public List<GameObject> elementsTypesPrefabs;
     public GameObject timer;
 
@@ -22,6 +23,7 @@ public class UIBuilder : MonoBehaviour
               .ToDictionary(x => x.k, x => x.v); ;
         MCEvent.panel = panel;
         MCEvent.scorePanel = scorePanel;
+        MCEvent.filler = filler1X1;
     }
 
     // Start is called before the first frame update

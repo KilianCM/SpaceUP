@@ -9,7 +9,7 @@
         <isCorrect>true</isCorrect>
       </Element>
       <Element>
-        <Type>button</Type>
+        <Type>lever</Type>
         <Text>Echelle</Text>
         <isCorrect>false</isCorrect>
       </Element>
@@ -40,7 +40,7 @@
         <isCorrect>false</isCorrect>
       </Element>
       <Element>
-        <Type>button</Type>
+        <Type>lever</Type>
         <Text>Echelle</Text>
         <isCorrect>false</isCorrect>
       </Element>
@@ -61,7 +61,7 @@
         <isCorrect>false</isCorrect>
       </Element>
       <Element>
-        <Type>button</Type>
+        <Type>lever</Type>
         <Text>Lacher du leste</Text>
         <isCorrect>false</isCorrect>
       </Element>

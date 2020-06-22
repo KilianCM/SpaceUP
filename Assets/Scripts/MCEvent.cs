@@ -11,10 +11,15 @@ public class MCEvent
     public static Dictionary<string, GameObject> elementsType;
     public static Questions questions;
     public static GameObject timer;
+    public static GameObject filler;
 
     private List<GameObject> UIElements;
     private int answerValue;
-    private const int columns = 2;
+
+
+    private const int columns = 4;
+    private const int rows = 3;
+
     private static int questionIndex = 0;
     public static int score = 0;
 
@@ -40,14 +45,58 @@ public class MCEvent
         }
         this.answerValue = question.AnswerValue;
 
-        float panelW = MCEvent.panel.transform.GetComponent<RectTransform>().rect.width;
+        float stdSize = 200; 
+        List<GameObject> shuffleElement = ShuffleList(UIElements);
+        int elementIdx = 0;
+        float panelH = MCEvent.panel.transform.GetComponent<RectTransform>().rect.height;
+
+        Vector3 pos = new Vector3(-((columns/2)*stdSize), panelH/4, 0);
+        for (int r = 0; r < rows; r++)
+        {
+            for (int c = 0; c < columns;)
+            {
+                if (elementIdx < shuffleElement.Count)
+                {
+                    MCElement element = shuffleElement[elementIdx].GetComponent<MCElement>();
+                    if (columns - c >= element.size)
+                    {
+                        c += element.size;
+                        shuffleElement[elementIdx].transform.localPosition = pos;
+                        element.EventHandler = this;
+                        elementIdx++;
+                        pos.x += stdSize * element.size;
+                    }
+                    else
+                    {
+                        c++;
+                        //GameObject instance = GameObject.Instantiate(filler) as GameObject;
+                        GameObject fillerInstance = GameObject.Instantiate(filler, panel.transform, false) as GameObject;
+                        fillerInstance.transform.localPosition = pos;
+                        pos.x += stdSize;
+                        /*instance.transform.SetParent(panel.transform, false);
+                        instance.transform.localPosition = pos;*/
+                    }
+                }
+                else
+                {
+                    c++;
+                    GameObject fillerInstance = GameObject.Instantiate(filler, panel.transform, false) as GameObject;
+                    fillerInstance.transform.localPosition = pos;
+                    pos.x += stdSize;
+                }
+                
+            }
+            pos.x = -((columns / 2) * stdSize);//reset horizontal pos
+            pos.y -= stdSize;
+        }
+
+
+
+        /*float panelW = MCEvent.panel.transform.GetComponent<RectTransform>().rect.width;
         float offset = panelW / 2;//panel position on x goes from -800 to +800 => offset to 0 - 1600 to make simpler operation
         Vector3 nextPosition = new Vector3((panelW / (columns + 1) - offset), 0);
-        /*Debug.Log(UIElements[0].GetComponent<MCElement>().labelText);
-        Debug.Log(ShuffleList(UIElements)[0].GetComponent<MCElement>().labelText);
-        Debug.Log(UIElements[0].GetComponent<MCElement>().labelText);*/
 
-        foreach (GameObject uiElement in ShuffleList(UIElements))
+        foreach (GameObject uiElement in ShuffleList(UIElements))//set position
         {
             uiElement.transform.localPosition = nextPosition;
             if (nextPosition.x + (panelW / (columns + 1)) + offset >= panelW)
@@ -61,7 +110,7 @@ public class MCEvent
             }
             MCElement element = uiElement.GetComponent<MCElement>();
             element.EventHandler = this;
-        }
+        }*/
         timer.GetComponent<Timer>().isStarted = true;
     }
 

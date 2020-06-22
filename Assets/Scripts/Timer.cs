@@ -5,7 +5,7 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     public bool isStarted = true;
-    public float remainingTime = 10;
+    private float remainingTime = 10;
     public float totalTime = 10;
     public MCEvent mcEvent;
     // Start is called before the first frame update
