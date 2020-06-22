@@ -29,7 +29,7 @@ public class UIBuilder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string path = Path.Combine(Application.dataPath, "Scripts/MCQuestionsData.xml");
+        string path = Application.streamingAssetsPath + "/MCQuestionsData.xml";
         MCEvent.questions = Deserialize<Questions>(path);
         new MCEvent();
     }
