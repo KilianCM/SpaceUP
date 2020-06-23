@@ -1797,7 +1797,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1368864423}
-        m_MethodName: LoadStep3MoonMission
+        m_MethodName: LoadStep3InfoMoonMission
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

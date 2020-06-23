@@ -42,9 +42,14 @@ public class ScenesControl : MonoBehaviour
         FadeToScene("AR");
     }
 
+    public void LoadStep3InfoMoonMission()
+    {
+        FadeToScene("MissionControlInfo");
+    }
+
     public void LoadStep3MoonMission()
     {
-        FadeToScene("MainMenu");
+        FadeToScene("MissionControl");
     }
 
     public void ReturnToMenu()
