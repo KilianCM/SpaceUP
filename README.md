@@ -17,7 +17,7 @@ Le choix s'est porté sur Unity pour facilement utiliser la réalité augmentée
 - ✅ Atelier Combustion, *fonctionnement d'un moteur de fusée*
 - ✅ Atelier Les Râtés, *histoire des erreurs qui ont menés aux loupés de décollage*
 - 🔨 Mission Lune : mini jeux dans le but d'atteindre la Lune
-- 🔨 Prise de selfie avec filtre SpaceUP
+- ✅ Prise de selfie avec filtre SpaceUP
 
 ## Comment ça marche ?
 
@@ -58,5 +58,6 @@ L'application est compatible avec un smartphone capable de lire un tag NFC et as
 | `MoonMission/FillTank`   | *WIP* : l'utilisateur doit choisir les bons carburants pour remplir la fusée |
 | `MoonMission/AR`   | Scène en réalité augmentée avec des modèles 3D NASA (hangar, pas de tir et Saturn V) avec compte à rebours et décollage de la fusée avec sons immersifs |
 | `GoddardWorkshop`   | Informations sur Goddard, le précurseur de la conquête spatiale. Utilisation de l'AR avec Vuforia. **[Cette affiche](https://i.imgur.com/KD9xl6e.jpg) est nécessaire pour expérimenter cet atelier.** |
+| `Selfie`   | Utilisation de la caméra frontale pour faire un selfie avec logo SpaceUP et partage sur les réseaux sociaux de son choix |
 
 Le script `ScenesControl` met à disposition des méthodes pour charger les scènes avec une animation FadeIn/FadeOut. Il est accessible en ajoutant le prefab `SceneController` dans une scène.
