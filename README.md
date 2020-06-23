@@ -63,3 +63,7 @@ L'application est compatible avec un smartphone capable de lire un tag NFC et as
 | `Selfie`   | Utilisation de la caméra frontale pour faire un selfie avec logo SpaceUP et partage sur les réseaux sociaux de son choix |
 
 Le script `ScenesControl` met à disposition des méthodes pour charger les scènes avec une animation FadeIn/FadeOut. Il est accessible en ajoutant le prefab `SceneController` dans une scène.
+
+### Modèles 3D
+
+Certains modèles 3D ont été réalisé à la main et d'autres ont été récupéré via [la bibliothèque de modèles 3D de la NASA](https://nasa3d.arc.nasa.gov/models).
