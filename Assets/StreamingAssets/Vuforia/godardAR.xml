@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="goddard_first_rocket" size="0.210000 0.261692" />
+    <ImageTarget name="goddard_V2" size="0.210000 0.370364" />
+    <ImageTarget name="godard" size="0.210000 0.275362" />
+  </Tracking>
+</QCARConfig>

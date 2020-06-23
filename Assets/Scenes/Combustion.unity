@@ -684,8 +684,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faf8cca275c1f994eb9a1c672c99d618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: "R\xE9servoir de carburant (OX))"
-  infos: 
+  title: "R\xE9servoir de carburant (OX)"
+  infos: "Ce r\xE9servoir contient de l'oxyg\xE8ne liquide qui est utilis\xE9 comme
+    comburant avec le RP-1 dans un grand nombre de lanceurs tels que les fus\xE9es
+    Delta, Atlas, Soyouz et Ariane 5.\nL'oxyg\xE8ne liquide \xE9tait utilis\xE9 d\xE8s
+    les ann\xE9es 1940 par les Allemands avec l'\xE9thanol  comme combustible destin\xE9
+    aux fus\xE9es V-2.\n"
   titleContainer: {fileID: 710024966}
   textContainer: {fileID: 369573656}
   isSelected: 0
@@ -6050,7 +6054,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "F\xE9licitations !\nVous avec r\xE9ussi \xE0 d\xE9marter le moteur, mission
+  m_Text: "F\xE9licitations !\nVous avec r\xE9ussi \xE0 d\xE9marrer le moteur, mission
     r\xE9ussie !"
 --- !u!222 &577839370
 CanvasRenderer:
@@ -7797,7 +7801,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   title: "R\xE9servoir de carburant (RP-1)"
-  infos: 
+  infos: "RP-1, pour Rocket Propellant 1 est une forme de k\xE9ros\xE8ne sp\xE9cialement
+    raffin\xE9 en vue d'une utilisation comme carburant liquide stockable pour lanceurs
+    spatiaux.\nLe RP-1 r\xE9sulte de la recherche, par les \xC9tats-Unis et l'URSS,
+    de carburants stockables puissants pour propulser leurs missiles balistiques
+    dans le cadre de la guerre froide."
   titleContainer: {fileID: 710024966}
   textContainer: {fileID: 369573656}
   isSelected: 0
@@ -18733,7 +18741,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   title: Igniter
-  infos: 
+  infos: "Le m\xE9lange doit \xEAtre enflamm\xE9 par un dispositif dont la fiabilit\xE9
+    est un crit\xE8re essentiel. L'allumage du m\xE9lange peut \xEAtre d\xE9clench\xE9
+    par une r\xE9sistance parcourue par un courant de forte intensit\xE9, un catalyseur,
+    une petite charge pyrotechnique ou encore d'autres techniques encore plus complexes
+    (r\xE9action chimique)."
   titleContainer: {fileID: 710024966}
   textContainer: {fileID: 369573656}
   isSelected: 0
