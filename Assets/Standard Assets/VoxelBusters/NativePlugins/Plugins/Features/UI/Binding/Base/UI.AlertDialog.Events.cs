@@ -64,10 +64,10 @@ namespace VoxelBusters.NativePlugins
 		{
 			if (_newCallback != null)
 			{
-				string _tag								= NPBinding.Utility.GetUUID();
+				/*string _tag								= NPBinding.Utility.GetUUID();
 				m_alertDialogCallbackCollection[_tag]	= _newCallback;
 
-				return _tag;
+				return _tag;*/
 			}
 
 			return string.Empty;

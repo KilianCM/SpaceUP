@@ -55,7 +55,7 @@ public class NPBinding : SingletonPattern <NPBinding>
 #endif
 
 	private		static		UI 						userInterface;
-	private		static		Utility 				utility;
+	//private		static		Utility 				utility;
 
 #if USES_WEBVIEW
 	private 	static		WebViewNative 			webview;
@@ -280,7 +280,7 @@ public class NPBinding : SingletonPattern <NPBinding>
 	/// <summary>
 	/// Returns platform specific interface to access Utility functions.
 	/// </summary>
-	public static Utility Utility 		
+	/*public static Utility Utility 		
 	{ 
 		get
 		{
@@ -294,7 +294,7 @@ public class NPBinding : SingletonPattern <NPBinding>
 				
 			return utility;
 		}
-	}
+	}*/
 
 #if USES_WEBVIEW
 	/// <summary>
@@ -396,8 +396,8 @@ public class NPBinding : SingletonPattern <NPBinding>
 		if (userInterface == null)
 			userInterface	= AddComponentBasedOnPlatformOnlyIfRequired<UI>();
 
-		if (utility == null)
-			utility			= CachedGameObject.AddComponentIfNotFound<Utility>();
+		/*if (utility == null)
+			utility			= CachedGameObject.AddComponentIfNotFound<Utility>();*/
 
 #if USES_WEBVIEW
 		if (webview == null)

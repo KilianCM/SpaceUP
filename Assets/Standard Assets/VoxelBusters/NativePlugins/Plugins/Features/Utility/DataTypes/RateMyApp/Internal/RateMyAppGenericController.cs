@@ -30,7 +30,7 @@ namespace VoxelBusters.NativePlugins.Internal
 
 		public void OnRate()
 		{
-			NPBinding.Utility.OpenStoreLink(_applicationID: NPSettings.Application.StoreIdentifier);
+			//NPBinding.Utility.OpenStoreLink(_applicationID: NPSettings.Application.StoreIdentifier);
 		}
 
 		public void OnDontShow()

@@ -72,7 +72,7 @@ namespace VoxelBusters.NativePlugins.Internal
 
 		public void Execute(IEnumerator _routine)
 		{
-			NPBinding.Utility.StartCoroutine(_routine);
+			//NPBinding.Utility.StartCoroutine(_routine);
 		}
 
 		#endregion
