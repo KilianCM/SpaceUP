@@ -57,6 +57,8 @@ L'application est compatible avec un smartphone capable de lire un tag NFC et as
 | `MoonMission/CrawlerVideo`   | Lecture d'une vidéo avec informations sur un crawler transporter |
 | `MoonMission/FillTank`   | *WIP* : l'utilisateur doit choisir les bons carburants pour remplir la fusée |
 | `MoonMission/AR`   | Scène en réalité augmentée avec des modèles 3D NASA (hangar, pas de tir et Saturn V) avec compte à rebours et décollage de la fusée avec sons immersifs |
+| `MoonMission/MissionControlInfo`   | Explications pour la scène suivante |
+| `MoonMission/MissionControl`   | Tableau de bord et timer pour effectuer des actions pour avancer dans la mission |
 | `GoddardWorkshop`   | Informations sur Goddard, le précurseur de la conquête spatiale. Utilisation de l'AR avec Vuforia. **[Cette affiche](https://i.imgur.com/KD9xl6e.jpg) est nécessaire pour expérimenter cet atelier.** |
 | `Selfie`   | Utilisation de la caméra frontale pour faire un selfie avec logo SpaceUP et partage sur les réseaux sociaux de son choix |
 
