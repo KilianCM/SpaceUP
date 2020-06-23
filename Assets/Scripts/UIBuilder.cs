@@ -42,10 +42,21 @@ public class UIBuilder : MonoBehaviour
 
     public static T Deserialize<T>(string path)
     {
+        T deserialized;
         XmlSerializer serializer = new XmlSerializer(typeof(T));
-        StreamReader reader = new StreamReader(path);
-        T deserialized = (T)serializer.Deserialize(reader.BaseStream);
-        reader.Close();
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            WWW androidReader = new WWW(path);
+            while (!androidReader.isDone) { }
+            MemoryStream stream = new MemoryStream(androidReader.bytes);
+            deserialized = (T)serializer.Deserialize(stream);
+        }
+        else
+        {
+            StreamReader reader = new StreamReader(path);
+            deserialized = (T)serializer.Deserialize(reader.BaseStream);
+            reader.Close();
+        }
         return deserialized;
     }
 }
