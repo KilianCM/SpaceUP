@@ -8,7 +8,9 @@ public class Landing : MonoBehaviour
     public float lHeight = -0.186f;
     public float initSpeed = 10;
     public ParticleSystem plume;
+    public AudioSource audioS;
     public Button takeOffBtn;
+    public AudioClip pschhhhtSound;
 
     private float descMaxThrust = 45000;
     private float ascMaxThrust = 15000;
@@ -53,7 +55,8 @@ public class Landing : MonoBehaviour
             float hover_throttle = 1 / twr;
             float throttle = hover_throttle *(1+ counterThrottle);
             rb.AddForce(new Vector3(0,throttle* descMaxThrust, 0),ForceMode.Force);
-            plumeMain.startSpeed = 50 * throttle;
+            plumeMain.startSpeed = new ParticleSystem.MinMaxCurve(50 * throttle);
+
         }
     }
 
@@ -66,8 +69,13 @@ public class Landing : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        landed = true;
-        plume.Stop();
-        StartCoroutine(disablePhysicsCoroutine());
+        if(!landed)
+        {
+            landed = true;
+            plume.Stop();
+            audioS.clip = pschhhhtSound;
+            audioS.Play();
+            StartCoroutine(disablePhysicsCoroutine());
+        }
     }
 }

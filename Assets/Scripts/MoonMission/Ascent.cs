@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Ascent : MonoBehaviour
 {
-    public ParticleSystem plume;
+    public GameObject plume;
     public float finalAltitude;
     public GameObject endPanel; 
 
@@ -37,6 +37,7 @@ public class Ascent : MonoBehaviour
         rb.isKinematic = false;
         rb.detectCollisions = true;
         isTakingOff = true;
-        plume.Play();
+        plume.GetComponent<ParticleSystem>().Play();
+        plume.GetComponent<AudioSource>().Play();
     }
 }
