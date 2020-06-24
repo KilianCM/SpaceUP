@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering.PostProcessing;
 
 public class Landing : MonoBehaviour
 {
@@ -25,6 +26,9 @@ public class Landing : MonoBehaviour
     private Rigidbody rb;
     private float startAlt;
     private ParticleSystem.MainModule plumeMain;
+    private PostProcessVolume ppv;
+    private DepthOfField dof = null;
+    private float focalLengthSpeed = 1f;
 
     void Awake()
     {
@@ -39,6 +43,8 @@ public class Landing : MonoBehaviour
         rb.velocity = new Vector3(0, initSpeed, 0);
         plumeMain = plume.main;
         plume.Play();
+        ppv = transform.GetComponentInChildren<PostProcessVolume>();
+        ppv.profile.TryGetSettings(out dof);
     }
 
     // Update is called once per frame
@@ -59,6 +65,13 @@ public class Landing : MonoBehaviour
             plumeMain.startSpeed = new ParticleSystem.MinMaxCurve(50 * throttle);
 
         }
+        else
+        {
+            if (dof.focalLength.value > 0)
+            {
+                dof.focalLength.value-=(focalLengthSpeed*Time.deltaTime);
+            }
+        }
     }
 
     IEnumerator disablePhysicsCoroutine()
@@ -70,8 +83,7 @@ public class Landing : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if(!landed)
-        {
+        if (!landed) { 
             engineLight.enabled = false;
             landed = true;
             plume.Stop();
