@@ -7,7 +7,8 @@ public class Ascent : MonoBehaviour
 {
     public GameObject plume;
     public float finalAltitude;
-    public GameObject endPanel; 
+    public GameObject endPanel;
+    public Light engineLight;
 
     private float ascMaxThrust = 15000;
     private float ascDryMass = 2445;
@@ -32,6 +33,7 @@ public class Ascent : MonoBehaviour
 
     public void AscentStart()
     {
+        engineLight.enabled = true;
         startingAlt = transform.position.y;
         rb=gameObject.AddComponent<Rigidbody>();
         rb.mass = ascDryMass + ascPropMass;

@@ -11,6 +11,7 @@ public class Landing : MonoBehaviour
     public AudioSource audioS;
     public Button takeOffBtn;
     public AudioClip pschhhhtSound;
+    public Light engineLight;
 
     private float descMaxThrust = 45000;
     private float ascMaxThrust = 15000;
@@ -71,6 +72,7 @@ public class Landing : MonoBehaviour
     {
         if(!landed)
         {
+            engineLight.enabled = false;
             landed = true;
             plume.Stop();
             audioS.clip = pschhhhtSound;
