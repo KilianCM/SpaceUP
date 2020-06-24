@@ -24,6 +24,7 @@ public class Ascent : MonoBehaviour
             if (transform.position.y >= finalAltitude && !endPanel.activeSelf)
             {
                 endPanel.SetActive(true);
+                rb.isKinematic = true;
             }
             rb.AddForce(new Vector3(0, ascMaxThrust, 0), ForceMode.Force);
         }
