@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Questions>
+  <Question>
+    <QuestionText>Activez le moteur</QuestionText>
+    <AnswerValue>1</AnswerValue>
+    <Elements>
+      <Element>
+        <Type>button</Type>
+        <Text>Moteur</Text>
+        <isCorrect>true</isCorrect>
+      </Element>
+      <Element>
+        <Type>lever</Type>
+        <Text>Echelle</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Découplage</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Gyroscope</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+    </Elements>
+  </Question>
+  <Question>
+    <QuestionText>Découplez</QuestionText>
+    <AnswerValue>1</AnswerValue>
+    <Elements>
+      <Element>
+        <Type>button</Type>
+        <Text>Découplage</Text>
+        <isCorrect>true</isCorrect>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Moteur</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>lever</Type>
+        <Text>Echelle</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Gyroscope</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+    </Elements>
+  </Question>
+  <Question>
+    <QuestionText>Mettre la puissance sur 4</QuestionText>
+    <AnswerValue>4</AnswerValue>
+    <Elements>
+      <Element>
+        <Type>button</Type>
+        <Text>Vider les réservoirs</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>lever</Type>
+        <Text>Lacher du leste</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>slider</Type>
+        <Text>Puissance moteur</Text>
+        <isCorrect>true</isCorrect>
+      </Element>
+      <Element>
+        <Type>slider</Type>
+        <Text>Inclinaison</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+    </Elements>
+  </Question>
+</Questions>

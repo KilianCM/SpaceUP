@@ -9,7 +9,7 @@ public class ScenesControl : MonoBehaviour
 
     public void LoadGoddardScene()
     {
-        // SceneManager.LoadScene("Launch");
+        SceneManager.LoadScene("GoddardWorkshop");
     }
     
     public void LoadCombustionScene()
@@ -39,7 +39,17 @@ public class ScenesControl : MonoBehaviour
 
     public void LoadStep2MoonMission()
     {
-        FadeToScene("FillTank");
+        FadeToScene("AR");
+    }
+
+    public void LoadStep3InfoMoonMission()
+    {
+        FadeToScene("MissionControlInfo");
+    }
+
+    public void LoadStep3MoonMission()
+    {
+        FadeToScene("MissionControl");
     }
 
     public void ReturnToMenu()
@@ -49,7 +59,6 @@ public class ScenesControl : MonoBehaviour
 
     public void FadeToScene(string scene) {
         sceneToLoad = scene;
-        PlayerPrefs.SetString ("lastLoadedScene", SceneManager.GetActiveScene ().name);
         animator.SetTrigger("FadeOut");
     }
 
@@ -62,8 +71,7 @@ public class ScenesControl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            string lastSceneName = PlayerPrefs.GetString("lastLoadedScene");
-            FadeToScene(lastSceneName);
+            FadeToScene("MainMenu");
         }
     }
 }
