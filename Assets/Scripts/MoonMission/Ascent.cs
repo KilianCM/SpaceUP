@@ -15,7 +15,6 @@ public class Ascent : MonoBehaviour
     private float ascPropMass = 2376;
     private Rigidbody rb;
     private bool isTakingOff = false;
-    private float startingAlt;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -33,8 +32,8 @@ public class Ascent : MonoBehaviour
 
     public void AscentStart()
     {
+        GameObject.FindGameObjectsWithTag("MainCamera")[0].transform.parent = transform;
         engineLight.enabled = true;
-        startingAlt = transform.position.y;
         rb=gameObject.AddComponent<Rigidbody>();
         rb.mass = ascDryMass + ascPropMass;
         rb.isKinematic = false;
