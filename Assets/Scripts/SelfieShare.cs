@@ -15,6 +15,7 @@ public class SelfieShare : MonoBehaviour
 	GameObject button;
 	// affichage du flux video de la camera sur une l'objet RawImage
 	public RawImage display;
+	public Button backButton; 
 
 	void Start()
 	{
@@ -80,6 +81,7 @@ public class SelfieShare : MonoBehaviour
 	private void FinishSharing(eShareResult _result)
 	{
 		Debug.Log(_result);
+		backButton.gameObject.SetActive(true);
 	}
 
 }
