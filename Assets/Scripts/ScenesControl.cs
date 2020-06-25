@@ -52,6 +52,16 @@ public class ScenesControl : MonoBehaviour
         FadeToScene("MissionControl");
     }
 
+    public void LoadStep4MoonMission()
+    {
+        FadeToScene("MoonLanding");
+    }
+
+    public void LoadSelfie()
+    {
+        FadeToScene("selfie");
+    }
+
     public void ReturnToMenu()
     {
         FadeToScene("MainMenu");

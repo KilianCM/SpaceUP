@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MoonMission/MoonLanding.unity
-    guid: 8e8d60e7b849a5a4fb081ce1bb69f07c
-  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: bb076c253c298455e8bb7e3e72f4aedc
   - enabled: 1
@@ -17,13 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Combustion.unity
     guid: ca34470b750f1ba46a6e9747126abbae
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/FailsNFCScan.unity
     guid: a2a590c90bef44d879ccfdb2a411eedc
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/NFCPlayVideo.unity
     guid: e37592cae2b8a4e75a2afefe38563c34
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Launch.unity
     guid: 5e08fc26bfee4d84ea5f516063a70a1c
   - enabled: 1
@@ -44,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MoonMission/MissionControl.unity
     guid: ef0c73d0e17644445a91c04a3b13b114
+  - enabled: 1
+    path: Assets/Scenes/MoonMission/MoonLanding.unity
+    guid: 8e8d60e7b849a5a4fb081ce1bb69f07c
   - enabled: 1
     path: Assets/Scenes/selfie.unity
     guid: bcd568a623fc3d5c1a7e4a21e7a84a22

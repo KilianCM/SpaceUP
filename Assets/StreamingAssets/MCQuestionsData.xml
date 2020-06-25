@@ -27,6 +27,32 @@
     </Elements>
   </Question>
   <Question>
+    <QuestionText>Mettre la puissance sur 4</QuestionText>
+    <AnswerValue>4</AnswerValue>
+    <Elements>
+      <Element>
+        <Type>button</Type>
+        <Text>Vider les réservoirs</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>lever</Type>
+        <Text>Lacher du leste</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>slider</Type>
+        <Text>Puissance moteur</Text>
+        <isCorrect>true</isCorrect>
+      </Element>
+      <Element>
+        <Type>slider</Type>
+        <Text>Inclinaison</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+    </Elements>
+  </Question>
+  <Question>
     <QuestionText>Découplez</QuestionText>
     <AnswerValue>1</AnswerValue>
     <Elements>
@@ -53,27 +79,79 @@
     </Elements>
   </Question>
   <Question>
-    <QuestionText>Mettre la puissance sur 4</QuestionText>
-    <AnswerValue>4</AnswerValue>
+    <QuestionText>Activez le gyroscope</QuestionText>
+    <AnswerValue>1</AnswerValue>
     <Elements>
       <Element>
         <Type>button</Type>
-        <Text>Vider les réservoirs</Text>
+        <Text>Sandwich</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Oxygène</Text>
         <isCorrect>false</isCorrect>
       </Element>
       <Element>
         <Type>lever</Type>
-        <Text>Lacher du leste</Text>
+        <Text>Echelle</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Gyroscope</Text>
+        <isCorrect>true</isCorrect>
+      </Element>
+    </Elements>
+  </Question>
+  <Question>
+    <QuestionText>Déployer les panneaux solaires</QuestionText>
+    <AnswerValue>1</AnswerValue>
+    <Elements>
+      <Element>
+        <Type>lever</Type>
+        <Text>Panneaux solaire</Text>
+        <isCorrect>true</isCorrect>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Pressuriser</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>lever</Type>
+        <Text>Trains d'atterrissage</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Gyroscope</Text>
+        <isCorrect>false</isCorrect>
+      </Element>
+    </Elements>
+  </Question>
+  <Question>
+    <QuestionText>Inclinaison sur 3</QuestionText>
+    <AnswerValue>3</AnswerValue>
+    <Elements>
+      <Element>
+        <Type>lever</Type>
+        <Text>Dissipateurs thermiques</Text>
+        <isCorrect>true</isCorrect>
+      </Element>
+      <Element>
+        <Type>button</Type>
+        <Text>Préssuriser</Text>
         <isCorrect>false</isCorrect>
       </Element>
       <Element>
         <Type>slider</Type>
-        <Text>Puissance moteur</Text>
+        <Text>Inclinaison</Text>
         <isCorrect>true</isCorrect>
       </Element>
       <Element>
-        <Type>slider</Type>
-        <Text>Inclinaison</Text>
+        <Type>button</Type>
+        <Text>Découpler</Text>
         <isCorrect>false</isCorrect>
       </Element>
     </Elements>
