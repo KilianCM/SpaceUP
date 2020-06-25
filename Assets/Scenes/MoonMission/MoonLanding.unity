@@ -265,7 +265,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325170364}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -1257,10 +1257,6 @@ PrefabInstance:
       propertyPath: engineLight
       value: 
       objectReference: {fileID: 325170366}
-    - target: {fileID: 1187241164, guid: a8a410e8bd15f4140b5aab64d5b05329, type: 3}
-      propertyPath: m_ClearFlags
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 564392513702657301, guid: a8a410e8bd15f4140b5aab64d5b05329,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1384,4 +1380,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 200497985, guid: a8a410e8bd15f4140b5aab64d5b05329, type: 3}
     - {fileID: 200497984, guid: a8a410e8bd15f4140b5aab64d5b05329, type: 3}
+    - {fileID: 479212267716547391, guid: a8a410e8bd15f4140b5aab64d5b05329, type: 3}
+    - {fileID: 4600798173047753339, guid: a8a410e8bd15f4140b5aab64d5b05329, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a8a410e8bd15f4140b5aab64d5b05329, type: 3}
