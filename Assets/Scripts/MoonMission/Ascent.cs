@@ -33,6 +33,7 @@ public class Ascent : MonoBehaviour
     public void AscentStart()
     {
         GameObject.FindGameObjectsWithTag("MainCamera")[0].transform.parent = transform;
+        Utils.SetLayerRecursively(gameObject,9);
         engineLight.enabled = true;
         rb=gameObject.AddComponent<Rigidbody>();
         rb.mass = ascDryMass + ascPropMass;

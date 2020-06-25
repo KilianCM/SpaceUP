@@ -14,18 +14,15 @@ public class Landing : MonoBehaviour
     public Light engineLight;
 
     private float descMaxThrust = 45000;
-    private float ascMaxThrust = 15000;
     private float descDryMass = 2034;
     private float descPropMass = 8248;
     private float ascDryMass = 2445;
     private float ascPropMass = 2376;
     private bool landed = false;
-    private bool isTakingOff = false;
     private Vector3 gravity = new Vector3(0, -1.62f, 0);
     private Rigidbody rb;
     private float startAlt;
     private ParticleSystem.MainModule plumeMain;
-    private float focalLengthSpeed = 1f;
 
     void Awake()
     {
@@ -62,11 +59,16 @@ public class Landing : MonoBehaviour
         }
     }
 
-    IEnumerator disablePhysicsCoroutine()
+    void DisablePhysics()
     {
-        yield return new WaitForSeconds(3);
         takeOffBtn.gameObject.SetActive(true);
         Destroy(rb);
+        foreach(BoxCollider bc in gameObject.GetComponents<BoxCollider>())
+        {
+            Destroy(bc);
+        }
+        Utils.SetLayerRecursively(gameObject, 0);
+        this.enabled = false;
     }
 
     void OnCollisionEnter(Collision collision)
@@ -78,7 +80,7 @@ public class Landing : MonoBehaviour
             plume.Stop();
             audioS.clip = pschhhhtSound;
             audioS.Play();
-            StartCoroutine(disablePhysicsCoroutine());
+            Invoke("DisablePhysics", 3);
         }
     }
 }
