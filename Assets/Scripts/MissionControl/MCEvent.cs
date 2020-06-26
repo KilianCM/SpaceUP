@@ -146,7 +146,8 @@ public class MCEvent
         if (isCorrect)
         {
             score += 100;
-            this.NextQuestion();
+            timer.GetComponent<Timer>().isStarted = false;
+            timer.GetComponent<Timer>().Invoke("NextQuestion", 1);//use of timer to access monobehavior 
         }
         else
         {

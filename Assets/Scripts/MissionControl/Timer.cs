@@ -42,4 +42,9 @@ public class Timer : MonoBehaviour
         this.isStarted = false;
         this.remainingTime = this.totalTime;
     }
+
+    public void NextQuestion()
+    {
+        mcEvent.NextQuestion();
+    }
 }
