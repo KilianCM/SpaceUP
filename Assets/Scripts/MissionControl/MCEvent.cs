@@ -133,6 +133,10 @@ public class MCEvent
             timer.SetActive(false);
             scorePanel.transform.Find("Score").GetComponent<Text>().text = score.ToString();
             scorePanel.SetActive(true);
+            if (PlayerData.MoonMissionScore < score)
+            {
+                PlayerData.MoonMissionScore = score;
+            }
         }
     }
 

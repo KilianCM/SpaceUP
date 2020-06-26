@@ -43,6 +43,10 @@ public class FailVideoController : MonoBehaviour
         Text[] texts = EndCanvas.GetComponentsInChildren<Text>();
         texts[2].text = QuizzController.score + "/4";
         EndCanvas.gameObject.SetActive(true);
+        if (PlayerData.FailsScore < (QuizzController.score*100))
+        {
+            PlayerData.FailsScore = QuizzController.score * 100;
+        }
     }
 
     IEnumerator PlayVideo()

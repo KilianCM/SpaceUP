@@ -15,7 +15,8 @@ public class SelfieShare : MonoBehaviour
 	GameObject button;
 	// affichage du flux video de la camera sur une l'objet RawImage
 	public RawImage display;
-	public Button backButton; 
+	public Button backButton;
+	public Text scoreText;
 
 	void Start()
 	{
@@ -42,6 +43,7 @@ public class SelfieShare : MonoBehaviour
 
 		cam.Play();
 		display.texture = cam;
+		scoreText.text = PlayerData.TotalScore().ToString() + " pts !";
 	}
 
 
