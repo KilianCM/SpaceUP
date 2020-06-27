@@ -47,6 +47,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/selfie.unity
     guid: bcd568a623fc3d5c1a7e4a21e7a84a22
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreen.unity
+    guid: 69039fda9e0c83841b9f8190902c73ba
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cd3c0482bc6d6419b866ed2276e9ef08,
       type: 2}
